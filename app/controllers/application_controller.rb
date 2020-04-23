@@ -41,7 +41,6 @@ class ApplicationController < Sinatra::Base
     @article2.content = params[:content]
     @article2.save
     redirect to "/articles/#{@article2.id}"
-=======
   end
 
   get '/articles/:id' do
@@ -53,7 +52,6 @@ class ApplicationController < Sinatra::Base
   get '/articles' do
     @articles = Article.all
     erb :index
->>>>>>> 0e53a1dcfdbf13685fcfc6d94cfab18f0ae7d68e
   end
 
 end
